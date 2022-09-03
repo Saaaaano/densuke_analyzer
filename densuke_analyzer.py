@@ -22,5 +22,5 @@ if url:
     data = df_sc[disp_name]
     if x_undisp:
         data = data[disp_name and df_sc[disp_name] != '×'].dropna(how='any')
-    st.dataframe(data, height=1122)
+    st.table(data)  #dataframeで表示するとスマホで名前が見えなくなるため、tableにした
     st.sidebar.write('Made by Sano @20220901')
