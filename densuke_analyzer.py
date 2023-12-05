@@ -1,6 +1,15 @@
 from gettext import npgettext
 import streamlit as st
 import function as fc
+import PIL as Image
+
+
+image = Image.open('./static/fabicon.png')
+st.set_page_config(
+    page_title = "Densuke analyzer",
+    page_icon = image
+)
+
 
 st.title('Densuke analyzer')
 
