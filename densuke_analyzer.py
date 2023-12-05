@@ -1,7 +1,7 @@
 from gettext import npgettext
 import streamlit as st
 import function as fc
-import PIL as Image
+from PIL import Image
 
 
 image = Image.open('./static/fabicon.png')
